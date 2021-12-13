@@ -4,7 +4,7 @@ class Backpack():
     def __init__(self):
         super().__init__()
         self.color = (0, 0, 0)
-        self.size = 0
+        self.size = "small"
         self.items = []
         self.open = False
 
@@ -35,11 +35,10 @@ backpack2 = Backpack()
 backpack3 = Backpack()
 
 backpack1.color = (0, 0, 255)
-backpack1.size = 0
 backpack2.color = (255, 0, 0)
-backpack2.size = 1
+backpack2.size = "medium"
 backpack3.color = (0, 255, 0)
-backpack3.size = 2
+backpack3.size = "large"
 
 backpack1.openBag()
 backpack1.putin("lunch")
